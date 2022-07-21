@@ -74,7 +74,7 @@ The generative model can be trained to generate new examples from the input doma
 
 The additional input could be a class value, such as male or female in the generation of photographs of people, or a digit, in the case of generating images of handwritten digits.
 
-**Refernces**
+**References**
 
 https://machinelearningmastery.com/what-are-generative-adversarial-networks-gans/
 
