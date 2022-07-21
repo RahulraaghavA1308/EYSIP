@@ -31,3 +31,45 @@ In the case of GANs, the generator model applies meaning to points in a chosen l
 
 After training, the generator model is kept and used to generate new samples
 
+![Untitled](https://user-images.githubusercontent.com/72121513/180178332-014e0ca0-8c72-43e6-aed5-61bee442ceb5.png)
+
+## ****The Discriminator Model****
+
+The discriminator model takes an example from the domain as input (real or generated) and predicts a binary class label of real or fake (generated).
+
+The real example comes from the training dataset. The generated examples are output by the generator model.
+
+The discriminator is a normal (and well understood) classification model.
+
+After the training process, the discriminator model is discarded as we are interested in the generator.
+
+---
+
+Sometimes, the generator can be repurposed as it has learned to effectively extract features from examples in the problem domain. Some or all of the feature extraction layers can be used in transfer learning applications using the same or similar input data.
+
+
+## ****GANs as a Two Player Game****
+
+Generative modeling is an unsupervised learning problem, although a clever property of the GAN architecture is that the training of the generative model is framed as a supervised learning problem.
+
+The two models, the generator and discriminator, are trained together. The generator generates a batch of samples, and these, along with real examples from the domain, are provided to the discriminator and classified as real or fake.
+
+The discriminator is then updated to get better at discriminating real and fake samples in the next round, 
+
+and importantly, the generator is updated based on how well, or not, the generated samples fooled the discriminator.
+
+
+![Untitled_2](https://user-images.githubusercontent.com/72121513/180178424-d87117b9-36eb-47e8-8e9a-982a47d4deb5.png)
+
+When the discriminator successfully identifies real and fake samples, it is rewarded or no change is needed to the model parameters, whereas the generator is penalized with large updates to model parameters.
+
+Alternately, when the generator fools the discriminator, it is rewarded, or no change is needed to the model parameters, but the discriminator is penalized and its model parameters are updated. 
+
+## Conditional GAN’s
+
+An important extension to the GAN is in their use for conditionally generating an output.
+
+The generative model can be trained to generate new examples from the input domain, where the input, the random vector from the latent space, is provided with (conditioned by) some additional input.
+
+The additional input could be a class value, such as male or female in the generation of photographs of people, or a digit, in the case of generating images of handwritten digits.
+
