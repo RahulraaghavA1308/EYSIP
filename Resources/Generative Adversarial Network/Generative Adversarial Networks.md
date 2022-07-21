@@ -31,7 +31,8 @@ In the case of GANs, the generator model applies meaning to points in a chosen l
 
 After training, the generator model is kept and used to generate new samples
 
-![Untitled](https://user-images.githubusercontent.com/72121513/180178332-014e0ca0-8c72-43e6-aed5-61bee442ceb5.png)
+![Untitled](https://user-images.githubusercontent.com/72121513/180178862-5e388994-1cee-43ee-90f3-9ede99e784ff.png)
+
 
 ## ****The Discriminator Model****
 
