@@ -1,3 +1,5 @@
+<img src ="Resources/Assets/Screenshot 2022-07-25 204039.jpg">
+
 # GAN-tionary (EYSIP 2022)
 
 ### Rahul raaghav A
