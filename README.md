@@ -1,5 +1,6 @@
 # GAN-tionary (EYSIP 2022)
 
+### Rahul raaghav A
 <br>
 
 ## DVQA
